@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>phoneBook</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>دفترچه تلفن</header>
+    <form>
+      <input
+        type="text"
+        class="todo-name-input"
+        placeholder="نام و نام خانوادگی"
+      />
+      <input type="number" class="todo-mobile-input" placeholder="شماره" />
+      <div class="type-number">
+        <select class="type-todo">
+          <option value="0">شماره ثابت</option>
+          <option value="1">شماره همراه</option>
+        </select>
+      </div>
+      <button type="button" class="todo-button">
+        <ion-icon name="add-outline"></ion-icon>
+      </button>
+    </form>
+    <div class="todo-container">
+      <div class="select">
+        <select name="todos" class="filter-todo">
+          <option value="2">همگی</option>
+          <option value="0">شماره ثابت</option>
+          <option value="1">شماره همراه</option>
+        </select>
+      </div>
+      <ul class="todo-list"></ul>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
